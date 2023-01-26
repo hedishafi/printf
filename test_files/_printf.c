@@ -22,17 +22,7 @@ int _printf(const char *format, ...){
       switch (format[i + 1]){
         case 'c':
             /* print the character from the va_arguments */
-            count += _putchar(va_arg(data, int));
-            break;
-        case 's':
-            count += print_string(va_arg(data, char *));
-            break;
-        case '%':
-            /* print the character from the va_arguments */
-            count += _putchar('%');
-            break;
-        case 'd':
-            count += print_decimal(va_arg(data, int));
+         
             break;
         case 'i':
             count += print_decimal(va_arg(data, int));
